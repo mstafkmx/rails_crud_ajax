@@ -1,0 +1,5 @@
+<% unless @posts %>
+$('body').html("<%= escape_javascript(render :partial => 'form') %>");
+<% else %>
+$('body').html("<%= escape_javascript(render :partial => 'posts') %>");
+<% end %>
